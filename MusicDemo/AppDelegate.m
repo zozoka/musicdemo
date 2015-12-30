@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MusicTopList.h"
+#import "PlayMusicVC.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     return YES;
 }
 

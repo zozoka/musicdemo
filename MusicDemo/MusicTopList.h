@@ -1,5 +1,5 @@
 //
-//  MusicList.h
+//  MusicTopList.h
 //  MusicDemo
 //
 //  Created by thanh tung on 12/9/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MusicList : UITableViewController
+@interface MusicTopList : UITableViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButtonItem;
 @end

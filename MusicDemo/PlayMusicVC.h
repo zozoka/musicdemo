@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MusicObject.h"
 @interface PlayMusicVC : UIViewController
-
+@property(nonatomic,strong)MusicObject * model;
+@property(nonatomic,strong) NSString* linkCurrent;
 @end

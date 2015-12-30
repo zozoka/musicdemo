@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface MusicNetWork : NSObject
++(instancetype)shareManager;
+-(void) GetMusicFromLink:(NSString*) url OnComplete:(void(^)(NSArray *items))completedMethod fail:(void(^)())failMethod;
+
 
 @end

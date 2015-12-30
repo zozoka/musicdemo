@@ -8,7 +8,7 @@
 
 #import "SidebarViewController.h"
 #import "SWRevealViewController.h"
-#import "PhotoViewController.h"
+
 
 
 @interface SidebarViewController ()
@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.menuItems = @[@"title",@"news",@"comments",@"calendar",@"whishlist",@"map"];
+    self.menuItems = @[@"search",@"ratings",@"musics",@"videos"];
 
 }
 
@@ -71,10 +71,7 @@
     
     // Set the photo if it navigates to the PhotoView
     if ([segue.identifier isEqualToString:@"showPhoto"]) {
-        UINavigationController *navController = segue.destinationViewController;
-        PhotoViewController *photoController = [navController childViewControllers].firstObject;
-        NSString *photoFilename = [NSString stringWithFormat:@"%@_photo.jpg", [self.menuItems objectAtIndex:indexPath.row]];
-        photoController.photoFilename = photoFilename;
+
     }
 }
 

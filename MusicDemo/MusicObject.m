@@ -19,9 +19,20 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(instancetype)initWithName: (NSString*)nameMusic
+        andUrlImage:(NSString*)urlImg
+      andSingerName:(NSString*)singer
+       andViewMusic:(NSString*)viewsMusic
+      andLinkDetail:(NSString*)linkDetail{
+    self = [super init];
+    if (self) {
+        self.nameMusic = nameMusic;
+        self.urlImage = urlImg;
+        self.nameSinger = singer;
+        self.viewsMusic = viewsMusic;
+        self.linkDetail = linkDetail;
+    }
+    return self;
 }
 
 /*
